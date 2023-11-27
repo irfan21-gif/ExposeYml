@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Download
-      run: Invoke-WebRequest https://expose.dev/expose-windows-amd64.zip -OutFile expose.zip
+  run: composer global require beyondcode/expose
     - name: Extract
       run: Expand-Archive expose.zip
     - name: Auth
